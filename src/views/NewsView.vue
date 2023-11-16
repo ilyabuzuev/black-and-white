@@ -6,7 +6,7 @@ import News from '@/components/News.vue';
 const news = ref([
   {
     id: 0,
-    img: 'src/assets/images/hero.png',
+    img: '/black-and-white/assets/images/hero.png',
     title: "Мы отркылись!",
     content: "Вы так долго этого ждали! И мы тоже! И это наконец совершилось!!! Приностие свои пленочки по адресу: г.Город, ул.Улица, д.Дом, кв.Кварира. Будем рады вас видеть! :)",
     likes: 0,

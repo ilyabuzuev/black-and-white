@@ -8,14 +8,14 @@ const services = ref([
     id: 0,
     name: 'Проявка ч/б пленки',
     description: 'Если вас зовут Максим, и вы отдали пленку на проявку именно нам, то у нас для вас плохие новости...',
-    img: 'src/assets/images/service-1.png',
+    img: '/black-and-white/assets/images/service-1.png',
     price: '999 999 ₽',
   },
   {
     id: 1,
     name: 'Печать фотографии',
     description: 'За всю историю нашего сервиса нами была напечатана всего одна единственаня фотография, однако не стоит спешить с выводами, ведь, несмотря на это, у нас огромный опыт!',
-    img: 'src/assets/images/service-2.png',
+    img: '/black-and-white/assets/images/service-2.png',
     price: '10 000 000 ₽',
   }
 ]);
