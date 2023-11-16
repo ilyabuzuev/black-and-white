@@ -9,7 +9,7 @@ import NewsView from '@/views/NewsView.vue';
 import './assets/main.css'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/black-and-white/'),
   routes: [
     {
       path: '/',

@@ -14,6 +14,10 @@
 </template>
 
 <style scoped>
+.home {
+  padding: 120px;
+}
+
 .home__container {
   display: flex;
   justify-content: center;

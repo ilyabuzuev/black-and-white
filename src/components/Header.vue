@@ -16,10 +16,10 @@
             <router-link class="nav__link" to="/shop">Магазин</router-link>
           </li>
           <li class="nav__item">
-            <router-link class="nav__link" to="/contacts">Контакты</router-link>
+            <router-link class="nav__link" to="/news">Новости</router-link>
           </li>
           <li class="nav__item">
-            <router-link class="nav__link" to="/news">Новости</router-link>
+            <router-link class="nav__link" to="/contacts">Контакты</router-link>
           </li>
         </ul>
       </nav>
@@ -31,7 +31,6 @@
 </template>
 
 <style scoped>
-/* Header */
 .header {
   height: 80px;
 }
@@ -56,5 +55,14 @@
 .login__link {
   font-size: 20px;
   color: var(--color-text);
+}
+
+.nav__link {
+  display: block;
+  transition: color .2s ease;
+}
+
+.nav__item:hover .nav__link {
+  color: var(--color-heading);
 }
 </style>

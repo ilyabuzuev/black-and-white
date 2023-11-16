@@ -9,8 +9,24 @@
   list-style-type: none;
 }
 
+.button-reset {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 .section {
-  padding: 120px 0px;
+  padding: 40px 0px;
+}
+
+.section-heading {
+  font-size: 36px;
+  color: var(--color-heading);
+}
+
+.section-description {
+  font-size: 24px;
 }
 
 a {
