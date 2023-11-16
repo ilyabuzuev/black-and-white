@@ -4,22 +4,22 @@
 <template>
   <header class="header">
     <div class="container header__container">
-      <router-link to="/black-and-white/">
+      <router-link to="/">
         <img class="header__logo" alt="Black & White" src="@/assets/logo.svg"/>
       </router-link>
       <nav class="header__nav nav">
         <ul class="nav__list list-reset">
           <li class="nav__item">
-            <router-link class="nav__link" to="/black-and-white/services">Услуги</router-link>
+            <router-link class="nav__link" to="/services">Услуги</router-link>
           </li>
           <li class="nav__item">
-            <router-link class="nav__link" to="/black-and-white/shop">Магазин</router-link>
+            <router-link class="nav__link" to="/shop">Магазин</router-link>
           </li>
           <li class="nav__item">
-            <router-link class="nav__link" to="/black-and-white/contacts">Контакты</router-link>
+            <router-link class="nav__link" to="/contacts">Контакты</router-link>
           </li>
           <li class="nav__item">
-            <router-link class="nav__link" to="/black-and-white/news">Новости</router-link>
+            <router-link class="nav__link" to="/news">Новости</router-link>
           </li>
         </ul>
       </nav>

@@ -12,27 +12,27 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: '/black-and-white/',
+      path: '/',
       name: 'Home',
       component: HomeView
     },
     {
-      path: '/black-and-white/services',
+      path: '/services',
       name: 'Services',
       component: ServicesView
     },
     {
-      path: '/black-and-white/shop',
+      path: '/shop',
       name: 'Shop',
       component: ShopView
     },
     {
-      path: '/black-and-white/contacts',
+      path: '/contacts',
       name: 'Contacts',
       component: ContactsView
     },
     {
-      path: '/black-and-white/news',
+      path: '/news',
       name: 'News',
       component: NewsView
     },
