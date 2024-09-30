@@ -1,0 +1,154 @@
+@import './base.sass'
+
+/* -------- Containers -------- */
+$containerSizes: xs, sm, md, lg, xl
+
+@each $containerSize in $containerSizes
+  .container-#{$containerSize}
+    margin: 0 auto
+    padding: 0 15px
+    max-width: var(--container-size-#{$containerSize})
+
+/* -------- Flex -------- */
+.flex
+  display: flex
+
+.flex-column
+  flex-direction: column
+
+.justify-between
+  justify-content: space-between
+
+.justify-end
+  justify-content: end
+
+.items-center
+  align-items: center
+/* ---------------------- */
+
+/* -------- Color Palette -------- */
+/* Text */
+$textColors: grey-1, grey-2, grey-3, grey-4, grey-5, grey-6, grey-7, grey-8, grey-9, grey-10, primary
+
+@each $textColor in $textColors
+  .text-#{$textColor}
+    color: var(--color-#{$textColor})
+
+/* Background */
+$backgroundColors: grey-1, grey-2, grey-3, grey-4, grey-5, grey-6, grey-7, grey-8, grey-9, grey-10, primary, transparent
+
+@each $backgroundColor in $backgroundColors
+  .background-#{$backgroundColor}
+    background-color: var(--color-#{$backgroundColor}) !important
+
+/* Color */
+$colors: grey-1, grey-2, grey-3, grey-4, grey-5, grey-6, grey-7, grey-8, grey-9, grey-10, primary
+
+@each $color in $colors
+  .color-#{$color}
+    color: var(--color-#{$color})
+
+/* Border */
+$borderColors: grey-1, grey-2, grey-3, grey-4, grey-5, grey-6, grey-7, grey-8, grey-9, grey-10, primary
+
+@each $borderColor in $borderColors
+  .border-#{$borderColor}
+    border-color: var(--color-#{$borderColor})
+/* ------------------------------- */
+
+/* -------- Typography -------- */
+.text
+  &-heading
+    font-size: 1.5rem
+    font-weight: 700
+    color: var(--text-heading-color)
+  &-description
+    font-size: 1.1rem
+    font-weight: 500
+    color: var(--text-description-color)
+  &-thin
+    font-weight: 300
+  &-normal
+    font-weight: 500
+  &-bold
+    font-weight: 700
+  &-h1
+    font-size: 1.7rem
+    font-weight: 700
+  &-h2
+    font-size: 1.4rem
+    font-weight: 700
+
+/* ---------------------------- */
+
+
+/* -------- Shadow -------- */
+$shadowSizes: xs, sm, md, lg, xl
+
+@each $shadowSize in $shadowSizes
+  .block-shadow-#{$shadowSize}
+    box-shadow: 0px 3px var(--size-#{$shadowSize}) 1px var(--shadow-color)
+/* ------------------------ */
+
+
+/* -------- Paddings -------- */
+.p-a
+  &-xs
+    padding: var(--size-xs)
+  &-sm
+    padding: var(--size-sm)
+  &-md
+    padding: var(--size-md)
+  &-lg
+    padding: var(--size-lg)
+  &-xl
+    padding: var(--size-xl)
+
+.p-y
+  &-xs
+    padding: var(--size-xs) 0px
+  &-sm
+    padding: var(--size-sm) 0px
+  &-md
+    padding: var(--size-md) 0px
+  &-lg
+    padding: var(--size-lg) 0px
+  &-xl
+    padding: var(--size-xl) 0px
+
+.p-x
+  &-xs
+    padding: 0px var(--size-xs)
+  &-sm
+    padding: 0px var(--size-sm)
+  &-md
+    padding: 0px var(--size-md)
+  &-lg
+    padding: 0px var(--size-lg)
+  &-xl
+    padding: 0px var(--size-xl)
+  &-xl
+    padding: 0px var(--size-xl)
+/* -------------------------- */
+
+
+/* -------- Border Radius -------- */
+$roundedSizes: xs, sm, md, lg, xl
+
+@each $roundedSize in $roundedSizes
+  .rounded-#{$roundedSize}
+    border-radius: var(--size-#{$roundedSize})
+/* ------------------------------- */
+
+/* -------- Loader -------- */
+@keyframes spin
+  0% 
+    transform: rotate(0deg)
+    
+  100% 
+    transform: rotate(360deg)
+    
+
+.loader
+  animation: spin 3s linear infinite
+/* ------------------------ */
